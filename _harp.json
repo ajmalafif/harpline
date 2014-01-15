@@ -1,11 +1,11 @@
 {
   "globals": {
-    "site_title": "Baseline",
-    "description": "Baseline is a blog boilerplate for the Harp platform.",
-    "site_url": "http://baseline.harpapp.io",
-    "site_twitter": "trybaseline",
+    "site_title": "Ajmal Afif",
+    "description": "Ajmal Afif's personal site.",
+    "site_url": "http://ajmalafif.com",
+    "site_twitter": "ajmalafif",
     "logo": "/images/logo.png",
-    "disqus_account": "baseline",
-    "analytics_account": "UA-342665-41"
+    "disqus_account": "ajmalafif-blog",
+    "analytics_account": ""
   }
 }
