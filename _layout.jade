@@ -1,5 +1,5 @@
-doctype
-html(class="#{ current.path[0] == 'work' && current.source !== 'index' ? current.source : '' }")
+doctype 5
+html(lang="en")
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0')
@@ -70,7 +70,9 @@ html(class="#{ current.path[0] == 'work' && current.source !== 'index' ? current
                       p= post.description
           != yield
         else
-          if current.path[0] === "blog"
+          if current.path[0] === "work"
+            != partial("/work/_work")
+          else if current.path[0] === "blog"
             != partial("/blog/_blog")
           else if current.path[0] === "authors"
             != partial("/authors/_author")
