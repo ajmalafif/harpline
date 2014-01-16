@@ -1,5 +1,5 @@
-doctype 5
-html(lang="en")
+doctype
+html(class="#{ current.path[0] == 'work' && current.source !== 'index' ? current.source : '' }")
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0')
@@ -49,10 +49,7 @@ html(lang="en")
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
   body(class="page-#{ current.path[0] } #{ current.path.join('-') }")
-    header.masthead
-      .container
-        h1
-          a(href='/')= site_title
+    != partial("_shared/nav")
       .img
     .content
       .container
