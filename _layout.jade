@@ -36,9 +36,13 @@ html(class="#{ current.path[0] == 'work' && current.source !== 'index' ? current
     link(rel='alternate', type='application/rss+xml', title=site_title + "RSS Feed", href='/blog/rss.xml')
     link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic')
     link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lekton')
-    link(rel="stylesheet", href='/css/main.css')
+    //- link(rel="stylesheet", href='/css/nav.css')
+    link(rel="stylesheet", href='/css/main.css') 
     //if lt IE 9
       <script src="/js/html5shiv.js"></script>
+    //if lt IE 8
+      <script src="/js/respond.js"></script>
+    <script src="/js/responsive-nav.js"></script>
     script(type='text/javascript').
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', '#{ locals.analytics_account }']);
@@ -73,3 +77,6 @@ html(class="#{ current.path[0] == 'work' && current.source !== 'index' ? current
           else if ["404", "about"].indexOf(current.path[0]) !== -1
             section.page
               != yield
+
+  script(type='text/javascript').
+    var navigation = responsiveNav("#nav");

@@ -1,11 +1,13 @@
 header.masthead
-	.container
+	.container			
+		#nav
+			ul
+				li(class="#{ current.source == 'work' ? 'active' : '' }")
+					a(href="/work") Work
+				li(class="#{ current.source == 'blog' ? 'active' : '' }")
+					a(href="/blog") Blog
+				li(class="#{ current.source == 'about' ? 'active' : '' }")
+					a(href="/about") About
+
 		h1
 			a(href='/')= site_title
-		ul
-			li(class="#{ current.source == 'work' ? 'active' : '' }")
-				a(href="/work") Work
-			li(class="#{ current.source == 'blog' ? 'active' : '' }")
-				a(href="/blog") Blog
-			li(class="#{ current.source == 'about' ? 'active' : '' }")
-				a(href="/about") About
