@@ -3,6 +3,7 @@ global-reset()
 @import 'nav'
 @import 'typography'
 @import '_nib'
+@import 'custom'
 
 body
   margin 0
@@ -21,19 +22,19 @@ body.line-36
 figure
   margin 36px 0
   figcaption
-    margin-top -36px
+    // margin-top -36px
     padding 36px
     background rgb(242,242,242)
-    box-sizing border-box
-    @media (max-width: 768px)
-      margin-top -32px
-      padding 32px
-    @media (max-width: 768px)
-      margin-top -27px
-      padding 27px
-    @media (max-width: 568px)
-      margin-top -24px
-      padding 24px
+    // box-sizing border-box
+    // @media (max-width: 768px)
+    //   margin-top -32px
+    //   padding 32px
+    // @media (max-width: 768px)
+    //   margin-top -27px
+    //   padding 27px
+    // @media (max-width: 568px)
+    //   margin-top -24px
+    //   padding 24px
   @media (max-width: 768px)
     margin 32px 0
   @media (max-width: 768px)
@@ -45,12 +46,12 @@ pre
   padding 36px
   background rgb(242,242,242)
   box-sizing border-box
-  @media (max-width: 1023px)
-    padding 32px
-  @media (max-width: 768px)
-    padding 27px
-  @media (max-width: 568px)
-    padding 24px
+  // @media (max-width: 1023px)
+  //   padding 32px
+  // @media (max-width: 768px)
+  //   padding 27px
+  // @media (max-width: 568px)
+  //   padding 24px
 
 img
   display block
@@ -100,6 +101,7 @@ article.post
 .articles
   // width 76%
   // margin 0 12%
+  padding 3% 0
   article
     margin 0 0 72px 0
     a
@@ -113,23 +115,23 @@ article.post
       &:hover
         border-left-color rgb(229,229,229)
       img.author
-        float right
+        // float right
         width 72px
         height 72px
-        margin 0 0 0 36px
+        // margin 0 0 0 36px
         border-radius 50%
-        @media (max-width: 1023px)
-          width 60px
-          height 60px
-          margin 0 0 0 24px
-        @media (max-width: 768px)
-          width 48px
-          height 48px
-          margin 0 0 0 21px
-        @media (max-width: 568px)
-          width 36px
-          height 36px
-          margin 0 0 0 18px
+        // @media (max-width: 1023px)
+        //   width 60px
+        //   height 60px
+        //   margin 0 0 0 24px
+        // @media (max-width: 768px)
+        //   width 48px
+        //   height 48px
+        //   margin 0 0 0 21px
+        // @media (max-width: 568px)
+        //   width 36px
+        //   height 36px
+        //   margin 0 0 0 18px
     &:last-child
       margin-bottom 0
       padding-bottom 0
@@ -256,20 +258,20 @@ img
 blockquote
 figcaption
 .embed
-  width 132%
-  margin 36px -16%
-  @media (max-width: 1023px)
-    width 124%
-    margin 32px -12%
-  @media (max-width: 768px)
-    width 120%
-    margin 27px -10%
-  @media (max-width: 568px)
-    width 110%
-    margin 24px -5%
-  @media (max-width: 480px)
-    width 108%
-    margin 24px -4%
+  // width 132%
+  // margin 36px -16%
+  // @media (max-width: 1023px)
+  //   width 124%
+  //   margin 32px -12%
+  // @media (max-width: 768px)
+  //   width 120%
+  //   margin 27px -10%
+  // @media (max-width: 568px)
+  //   width 110%
+  //   margin 24px -5%
+  // @media (max-width: 480px)
+  //   width 108%
+  //   margin 24px -4%
 figure.left
 figure.right
   img
@@ -315,39 +317,39 @@ figure.right
     padding-top 60.75%
 
 .left
-  float left
-  width 58%
-  margin 36px 36px 36px -16%
-  @media (max-width: 1023px)
-    width 56%
-    margin 27px 27px 27px -12%
-  @media (max-width: 768px)
-    width 55%
-    margin 32px 32px 32px -10%
-  @media (max-width: 568px)
-    float none
-    width 110%
-    margin 24px -5%
-  @media (max-width: 480px)
-    width 108%
-    margin 24px -4%
+  // float left
+  // width 58%
+  // margin 36px 36px 36px -16%
+  // @media (max-width: 1023px)
+  //   width 56%
+  //   margin 27px 27px 27px -12%
+  // @media (max-width: 768px)
+  //   width 55%
+  //   margin 32px 32px 32px -10%
+  // @media (max-width: 568px)
+  //   float none
+  //   width 110%
+  //   margin 24px -5%
+  // @media (max-width: 480px)
+  //   width 108%
+  //   margin 24px -4%
 .right
-  float right
-  width 58%
-  margin 36px -16% 36px 36px
-  @media (max-width: 1023px)
-    width 56%
-    margin 32px -12% 32px 32px
-  @media (max-width: 768px)
-    width 55%
-    margin 27px -10% 27px 27px
-  @media (max-width: 568px)
-    float none
-    width 110%
-    margin 24px -5%
-  @media (max-width: 480px)
-    width 108%
-    margin 24px -4%
+  // float right
+  // width 58%
+  // margin 36px -16% 36px 36px
+  // @media (max-width: 1023px)
+  //   width 56%
+  //   margin 32px -12% 32px 32px
+  // @media (max-width: 768px)
+  //   width 55%
+  //   margin 27px -10% 27px 27px
+  // @media (max-width: 568px)
+  //   float none
+  //   width 110%
+  //   margin 24px -5%
+  // @media (max-width: 480px)
+  //   width 108%
+  //   margin 24px -4%
 
 .clearfix:before
 .clearfix:after

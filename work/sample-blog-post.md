@@ -1,5 +1,5 @@
 <figure>
-  <img src="http://farm6.staticflickr.com/5325/9093313309_b977c1737e_b.jpg" alt="Sample image">
+  <img class="img-responsive" src="http://farm6.staticflickr.com/5325/9093313309_b977c1737e_b.jpg" alt="Sample image">
   <figcaption>Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem. <a href="http://rosshj.com/">I'm a link</a></figcaption>
 </figure>
 

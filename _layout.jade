@@ -55,22 +55,22 @@ html(lang="en")
   body(class="page-#{ current.path[0] } #{ current.path.join('-') }")
     != partial("_shared/nav")
       .img
-    .content
-      .container
+    .content.container
+
         if current.path[0] === "index"
           .articles
             for post, slug in public.work._data
               if post.layout !== false
                 article
-                  .row
-                    a(href="/work/#{ slug }")                    
-                        .col-md-8
-                          h1.sm= post.title
-                          h2.xs.date #{ post.date } • by #{ public.authors._data[post.author].name }
-                          if post.description
-                            p= post.description
-                        .col-md-4
-                          img(src='/images/#{ public.authors._data[post.author].photo }', alt='#{ public.authors._data[post.author].name }', class='author')
+                    .row
+                      a(href="/work/#{ slug }")                    
+                          .col-sm-8.work-title
+                            h1.sm= post.title                            
+                            if post.description
+                              p= post.description
+                          .col-sm-4.work-image
+                            h2.xs.date #{ post.date }
+                            img(src='/images/#{ public.authors._data[post.author].photo }', alt='#{ public.authors._data[post.author].name }', class='author')
           != yield
         else
           if current.path[0] === "work"
