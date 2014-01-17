@@ -1,4 +1,5 @@
 global-reset()
+@import 'bootstrap'
 @import 'nav'
 @import 'typography'
 @import '_nib'
@@ -6,7 +7,7 @@ global-reset()
 body
   margin 0
   padding 0 0 60px 0
-  background rgb(255,255,255)
+  background rgb(218,218,210)
   @media (max-width: 768px)
     padding 0 0 48px 0
   @media (max-width: 568px)
@@ -54,11 +55,11 @@ pre
 img
   display block
 
-.container
-  width 980px
-  margin 0 auto
-  @media (max-width: 980px)
-    width 100%
+// .container
+//   width 980px
+//   margin 0 auto
+//   @media (max-width: 980px)
+//     width 100%
 
 .masthead
   margin 0 0 60px 0
@@ -97,8 +98,8 @@ section.page
 section.author
 article.post
 .articles
-  width 76%
-  margin 0 12%
+  // width 76%
+  // margin 0 12%
   article
     margin 0 0 72px 0
     a
@@ -151,7 +152,8 @@ article.post
     transition-duration 0.25s, 0.25s
     animation-timing-function linear, linear
     &:hover
-      border-bottom-color rgb(0,0,0,1)
+      // border-bottom-color rgb(0,0,0,1)
+      border-bottom-color turquoise
       text-shadow 0 8px 0 rgba(255,255,255,0)
 section.author
   img

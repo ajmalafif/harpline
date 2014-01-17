@@ -59,15 +59,18 @@ html(lang="en")
       .container
         if current.path[0] === "index"
           .articles
-            for post, slug in public.blog._data
+            for post, slug in public.work._data
               if post.layout !== false
                 article
-                  a(href="/blog/#{ slug }")
-                    img(src='/images/#{ public.authors._data[post.author].photo }', alt='#{ public.authors._data[post.author].name }', class='author')
-                    h1.sm= post.title
-                    h2.xs.date #{ post.date } • by #{ public.authors._data[post.author].name }
-                    if post.description
-                      p= post.description
+                  .row
+                    a(href="/work/#{ slug }")                    
+                        .col-md-8
+                          h1.sm= post.title
+                          h2.xs.date #{ post.date } • by #{ public.authors._data[post.author].name }
+                          if post.description
+                            p= post.description
+                        .col-md-4
+                          img(src='/images/#{ public.authors._data[post.author].photo }', alt='#{ public.authors._data[post.author].name }', class='author')
           != yield
         else
           if current.path[0] === "work"
