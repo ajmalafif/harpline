@@ -1,4 +1,5 @@
 {
+  "name": "ajmalafif",
   "version": "1.0.0",
   "description": "A Harp App on Heroku",
   "dependencies": {
