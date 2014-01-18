@@ -1,5 +1,9 @@
 {
 	"feed": {
     "layout": false
-	}	
+	},
+	"current": {
+	"path": ["about", "index"],
+	"source": "about"
+	}
 }
