@@ -55,22 +55,23 @@ html(lang="en")
   body(class="page-#{ current.path[0] } #{ current.path.join('-') }")
     != partial("_shared/nav")
       .img
-    .content.container
+    .content
 
         if current.path[0] === "index"
-          .articles
-            for post, slug in public.work._data
-              if post.layout !== false
-                article
-                    .row
-                      a(href="/work/#{ slug }")                    
-                          .col-sm-8.work-title
-                            h1.sm= post.title                            
-                            if post.description
-                              p= post.description
-                          .col-sm-4.work-image
-                            h2.xs.date #{ post.date }
-                            img(src='/images/#{ public.authors._data[post.author].photo }', alt='#{ public.authors._data[post.author].name }', class='author')
+          .container
+            .articles
+              for post, slug in public.work._data
+                if post.layout !== false
+                  article
+                      .row
+                        a(href="/work/#{ slug }")                    
+                            .col-sm-8.work-title
+                              h1.sm= post.title                            
+                              if post.description
+                                p= post.description
+                            .col-sm-4.work-image
+                              //- h2.xs.date #{ post.date }
+                              img(src='/images/#{ public.authors._data[post.author].photo }', alt='#{ public.authors._data[post.author].name }', class='author')
           != yield
         else
           if current.path[0] === "work"
@@ -80,8 +81,9 @@ html(lang="en")
           else if current.path[0] === "authors"
             != partial("/authors/_author")
           else if ["404", "about"].indexOf(current.path[0]) !== -1
-            section.page
-              != yield
+            .container
+              section.page
+                != yield
 
   script(type='text/javascript').
     var navigation = responsiveNav("#nav");
