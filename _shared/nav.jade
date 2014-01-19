@@ -2,12 +2,12 @@ header.masthead
 	.container			
 		#nav
 			ul
-				li(class="#{ current.source == 'blog' ? 'active' : '' }")
-					a(href="/blog") Blog
-				li(class="#{ current.source == 'about' ? 'active' : '' }")
-					a(href="/about") About
-				li(class="#{ current.source == 'work' ? 'active' : '' }")
-					a(href="/work") Work
+				li
+					a(class="#{ current.path[0] === 'blog' ? 'active' : '' }" href="/blog") Blog
+				li
+					a(class="#{ current.path[0] === 'about' ? 'active' : '' }" href="/about") About
+				li
+					a(class="#{ current.path[0] === 'work' ? 'active' : '' }" href="/work") Work
 
 		h1
 			a(href='/')= site_title
