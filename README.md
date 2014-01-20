@@ -1,5 +1,7 @@
 # Baseline (customized)
 
+This is a heavily customized Baseline to cater my personal site structure. 
+
 ![Baseline logo](http://rosshj.com/files/harp/baseline/baseline-logo.png)
 
 [Baseline](http://baseline.harpapp.io/) is a blog boilerplate for the [Harp platform](http://harp.io/).
