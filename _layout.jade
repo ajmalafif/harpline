@@ -23,15 +23,15 @@ html(lang="en")
     meta(property='og:site_name', content=site_title)
     meta(name='twitter:card', content='summary')
     meta(name='twitter:site', content="@" + site_twitter)
-    if current.path[0] === "blog"
-      if public.authors._data[author].twitter
-        meta(name='twitter:creator', content="@" + public.authors._data[author].twitter)
-    meta(name='twitter:title', content=locals.title ? title + " | " + site_title : site_title)
-    meta(name='twitter:description', content=description)
-    meta(name='twitter:image', content=site_url + logo)
-    if current.path[0] === "blog"
-      if public.authors._data[author].google_plus
-        link(rel='author', href='#{ public.authors._data[author].google_plus }')
+    //- if current.path[0] === "blog"
+    //-   if public.authors._data[author].twitter
+    //-     meta(name='twitter:creator', content="@" + public.authors._data[author].twitter)
+    //- meta(name='twitter:title', content=locals.title ? title + " | " + site_title : site_title)
+    //- meta(name='twitter:description', content=description)
+    //- meta(name='twitter:image', content=site_url + logo)
+    //- if current.path[0] === "blog"
+    //-   if public.authors._data[author].google_plus
+    //-     link(rel='author', href='#{ public.authors._data[author].google_plus }')
     link(rel='shortcut icon', href='/favicon.ico')
     link(rel='alternate', type='application/rss+xml', title=site_title + "RSS Feed", href='/blog/rss.xml')
     link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic')
