@@ -1,8 +1,7 @@
 article.post
 	.container
-		h1.lg.title= title
-		h2.sm.date= date
-		!= yield
-		!= partial("../_shared/blog-nav")
-		!= partial("../_shared/author")
-		!= partial("../_shared/disqus")
+		.articles
+			!= yield
+			!= partial("../_shared/blog-nav")
+			//- != partial("../_shared/ajmal")
+			!= partial("../_shared/disqus")

@@ -1,8 +1,8 @@
-for post, slug in public.work._data
+for post, slug in public.blog._data
   if post.layout !== false
     article
         .row
-          a(href="/work/#{ slug }")                    
+          a(href="/blog/#{ slug }")                    
               .col-sm-8.work-title
                 h1.sm= post.title                            
                 if post.description
