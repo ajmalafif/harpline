@@ -1,9 +1,12 @@
-article.post
-	.container
-		.row
-			.col-xs-12
-				h1.lg.title= title
-				h2.sm.date= date
-				!= yield
-				!= partial("../_shared/work-nav")
-				!= partial("../_shared/author")
+if current.source === 'index'
+	!= yield
+else
+	article.post
+		.container
+			.row
+				.col-xs-12
+					h1.lg.title= title
+					h2.sm.date= date
+					!= yield
+					!= partial("../_shared/work-nav")
+
