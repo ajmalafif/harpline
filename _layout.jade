@@ -77,7 +77,7 @@ html(lang="en")
           if current.path[0] === "work"
             != partial("/work/_work")
           else if current.path[0] === "blog"
-            != partial("/blog/_blog")
+            != partial("/blog/_blog") 
           else if current.path[0] === "authors"
             != partial("/authors/_author")
           else if ["404", "about"].indexOf(current.path[0]) !== -1

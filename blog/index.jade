@@ -1,12 +1,15 @@
-for post, slug in public.blog._data
-  if post.layout !== false
-    article
-        .row
-          a(href="/blog/#{ slug }")                    
-              .col-sm-8.work-title
-                h1.sm= post.title                            
-                if post.description
-                  p= post.description
-              .col-sm-4.work-image
-                //- h2.xs.date #{ post.date }
-                img(src='/images/#{ public.authors._data[post.author].photo }', alt='#{ public.authors._data[post.author].name }', class='author')
+article.post
+  .container
+    .articles
+      for post, slug in public.blog._data
+        if post.layout !== false
+          article
+              .row
+                a(href="/blog/#{ slug }")                    
+                    .col-sm-8.work-title
+                      h1.sm= post.title                            
+                      if post.description
+                        p= post.description
+                    .col-sm-4.work-image
+                      h2.xs.date #{ post.date }
+                      //- img(src='/images/#{ public.authors._data[post.author].photo }', alt='#{ public.authors._data[post.author].name }', class='author')

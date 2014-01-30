@@ -1,7 +1,10 @@
 article.post
 	.container
-		.articles
+		.row
+			.col-xs-12
 			!= yield
 			!= partial("../_shared/blog-nav")
-			//- != partial("../_shared/ajmal")
-			!= partial("../_shared/disqus")
+			if current.source !== 'index'
+				!= partial("../_shared/author")
+				!= partial("../_shared/disqus")
+			else

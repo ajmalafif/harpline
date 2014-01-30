@@ -2,6 +2,9 @@
 	"feed": {
     "layout": false
 	},
+	"blog": {
+	"layout": false	
+	},
 	"current": {
 	"path": ["about", "index"],
 	"source": "about"
