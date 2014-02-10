@@ -68,7 +68,7 @@ html(lang="en")
             for post, slug in public.work._data
               if post.layout !== false
                 article                  
-                    .row.work(class="#{ slug }")
+                    .work(class="#{ slug }")
                       a(href="/work/#{ slug }")
                         .container
                           .col-sm-8.work-title
