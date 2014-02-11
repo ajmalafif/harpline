@@ -18,6 +18,6 @@ each post, i in work.sort(function(a,b){ a = new Date(a.date); b = new Date(b.da
       //- The actual links
       ol.post-nav
         if prev
-          a.post-prev(href="#{ prev.slug }") #{ prev.title }
+          a.post-prev(href="#{ prev.slug }") Previous: #{ prev.title }
         if next
-          a.post-next(href="#{ next.slug }") #{ next.title }
+          a.post-next(href="#{ next.slug }") Next: #{ next.title }
