@@ -7,9 +7,9 @@ html(lang="en")
     if current.path[0] === "index"
       meta(name='description', content=description)
     else
-    //-   if current.path[0] === "blog"
-    //-     meta(name='description', content=description)
-    //- meta(property='og:title', content=locals.title ? title + " | " + site_title : site_title)
+      if current.path[0] === "blog"
+        meta(name='description', content=description)
+    meta(property='og:title', content=locals.title ? title + " | " + site_title : site_title)
     if current.path[0] === "index"
       meta(property='og:type', content='website')
       meta(property='og:description', content=description)
