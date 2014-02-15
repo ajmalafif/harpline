@@ -1,0 +1,14 @@
+meta(name='description', content=description)
+    
+meta(property='og:title', content=locals.title ? title + " | " + site_title : site_title)
+meta(property='og:type', content='website')
+meta(property='og:description', content=description)
+meta(property='og:url', content=site_url)
+meta(property='og:image', content=site_url + logo)
+meta(property='og:site_name', content=site_title)
+  
+meta(name='twitter:card', content='summary')
+meta(name='twitter:site', content="@" + site_twitter)
+meta(name='twitter:title', content=locals.title ? title + " | " + site_title : site_title)
+meta(name='twitter:description', content=description)
+meta(name='twitter:image', content=site_url + logo)
