@@ -1,7 +1,7 @@
 if current.source === 'index'
 	!= yield
 else
-	article.post
+	article.all
 		.container
 			.row
 				.col-xs-12
@@ -10,6 +10,6 @@ else
 				!= yield
 				!= partial("../_shared/blog-nav")
 				if current.source !== 'index'
-					!= partial("../_shared/author")
+					!= partial("../_shared/bio")
 					!= partial("../_shared/disqus")
 				else
