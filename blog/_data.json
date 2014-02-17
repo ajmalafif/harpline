@@ -17,8 +17,9 @@
   "text-only-blog-post": {
     "title": "Text Only Blog Post",
     "date": "September 16, 2013",
-    "author": "brock-whitten",
-    "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet."
+    "author": "ajmalafif",
+    "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet.",
+    "published": false
   },
   "code-in-a-post": {
     "title": "Code in a Post",

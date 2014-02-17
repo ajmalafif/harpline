@@ -39,7 +39,8 @@ html(lang="en")
           else if ["404", "about"].indexOf(current.path[0]) !== -1
             .container
               section.page
-                != yield
+                if published!==false || environment=='development'
+                  != yield
   <script src="/js/responsive-nav.js"></script>
   script(type='text/javascript').
     var navigation = responsiveNav("#nav");
