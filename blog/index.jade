@@ -1,10 +1,10 @@
 .container
   .articles
-    for post, slug in public.blog._data
-      if post.layout !== false
+    each post, slug in public.blog._data
+      if post.published!==false || environment=='development'
         article
             .row
-              a(href="/blog/#{ slug }")                    
+              a(href="/blog/#{ slug }" class="#{ post.published==false ? 'unpublished' : '' }")
                   .col-sm-8.work-title
                     h1.sm= post.title                            
                     if post.description
