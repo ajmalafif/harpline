@@ -2,6 +2,12 @@
 
 This is a heavily customized Baseline to cater my personal site structure. 
 
+## My todo list
+
+- [ ] make "unpublished" to work on production & development
+
+## Original Baseline
+
 ![Baseline logo](http://rosshj.com/files/harp/baseline/baseline-logo.png)
 
 [Baseline](http://baseline.harpapp.io/) is a blog boilerplate for the [Harp platform](http://harp.io/).
