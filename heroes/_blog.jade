@@ -1,0 +1,15 @@
+if current.source === 'index'
+	!= yield
+else
+	article.all
+		.container
+			.row
+				.col-xs-12
+				h1.lg.title= title
+				h2.sm.date= date
+				!= yield
+				!= partial("../_shared/blog-nav")
+				if current.source !== 'index'
+					!= partial("../_shared/bio")
+					!= partial("../_shared/disqus")
+				else
