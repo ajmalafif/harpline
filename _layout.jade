@@ -39,7 +39,7 @@ html(lang="en")
           else if ["404", "about"].indexOf(current.path[0]) !== -1
             .container
               section.page
-                if published!==false || environment=='development'
+                if published!==true || environment=='development'
                   != yield
   <script src="/js/responsive-nav.js"></script>
   script(type='text/javascript').
