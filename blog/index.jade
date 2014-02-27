@@ -1,7 +1,7 @@
 .container
   .articles
     each post, slug in public.blog._data
-      if post.published!==false && environment=='development'
+      if post.published!==false || environment=='production'
         article
             .row
               a(href="/blog/#{ slug }" class="#{ post.published==false ? 'unpublished' : '' }")
