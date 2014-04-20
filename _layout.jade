@@ -46,4 +46,13 @@ html(lang="en")
     <script src="/js/foldresizer.min.js"></script>
     script(type='text/javascript').
       foldresizer('intro', 100, 0);
-  
+  if current.path[0] === "about"
+    <script src="/js/jquery/jquery.min.js"></script>
+    <script src="/js/jquery/jquery-ui.min.js"></script>
+    <script src="/js/bigvideo/imagesloaded.js"></script>
+    <script src="/js/bigvideo/video.js"></script>
+    <script src="/js/bigvideo/bigvideo.js"></script>
+    script(type='text/javascript').
+      var BV = new $.BigVideo();
+          BV.init();
+          BV.show('https://s3-ap-southeast-1.amazonaws.com/ajmalafif/videos/matrix.mp4');
