@@ -1,12 +1,9 @@
-if current.source === 'index'
-	!= yield
-else
-	article.all
-		.container
-			.row
-				.col-xs-12
-					h1.lg.title= title
-					h2.sm.date= date
-					!= yield
-					!= partial("../_shared/work-nav")
+article.all
+  .container.m-bottom-three
+    h1.text-center.lg.title= title
+    h2.text-center.sm.date= date
+  .layout-work
+    != yield
+  .container.layout-content
+    != partial("../_shared/work-nav")
 

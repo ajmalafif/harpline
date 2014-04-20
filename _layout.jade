@@ -6,12 +6,10 @@ html(lang="en")
   body(class="page-#{ current.path[0] } #{ current.path.join('-') }")
     != partial("_shared/nav")
       .img
-    .content
+    .content(class="content-#{ current.path[0] } #{ current.path.join('-') }")
         if current.path[0] === "index"
           .container
             #bighead
-              .first-intro
-                h1.intro I'm a Frontend Web Traveler.
               .second-intro
                 h3.intro Check out my recent work & writing.
           .articles
