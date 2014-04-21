@@ -8,10 +8,9 @@ html(lang="en")
       .img
     .content(class="content-#{ current.path[0] } #{ current.path.join('-') }")
         if current.path[0] === "index"
+          != partial("_frontpage/intro")
           .container
-            #bighead
-              .second-intro
-                h3.intro Check out my recent work & writing.
+            h3 I'm a fulltime at VLT LABS. 
           .articles
             for post, slug in public.work._data
               if post.layout !== false
